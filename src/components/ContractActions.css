@@ -1,0 +1,98 @@
+/* Import futuristic yet professional font */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@400;600&display=swap");
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card Container */
+.card {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    width: 380px;
+    text-align: center;
+    position: relative;
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+/* Header */
+h2 {
+    font-size: 1.8rem;
+    color: #0ff;
+    font-family: "Orbitron", sans-serif;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+/* Input Styling */
+input {
+    padding: 12px;
+    width: 100%;
+    font-size: 1rem;
+    border: 2px solid #0ff;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Button Styling */
+button {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    background: linear-gradient(135deg, #0ff, #0077ff);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    margin-top: 10px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #00d4ff, #0099ff);
+    box-shadow: 0 6px 12px rgba(0, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Withdraw Button - Different Color */
+.withdraw-button {
+    background: linear-gradient(135deg, #ff00ff, #ff0080);
+    box-shadow: 0 4px 10px rgba(255, 0, 255, 0.3);
+}
+
+.withdraw-button:hover {
+    background: linear-gradient(135deg, #ff33ff, #ff3399);
+    box-shadow: 0 6px 12px rgba(255, 0, 255, 0.5);
+}
